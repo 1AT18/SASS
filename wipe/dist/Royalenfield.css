@@ -1,0 +1,45 @@
+body {
+  background-image: url("mmm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  border-radius: 1% #e9e3e3;
+  background-image: linear-gradient(gray, #bbb0b0);
+  margin-top: 10px;
+  display: flex;
+  justify-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  height: 25%;
+  width: 25%;
+}
+
+.anchor {
+  text-decoration: solid;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.anchor a:hover {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  border: 100% thick grey;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  padding: 10% 10%;
+}
+
+.a1, .a4, .a3, .a2 {
+  margin-left: 15%;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px;
+  padding: 2px;
+}
+
+body {
+  background-image: url("mmm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  border-radius: 1% #e9e3e3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(#bbb0b0));
+  background-image: linear-gradient(gray, #bbb0b0);
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav .nav_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  height: 25%;
+  width: 25%;
+}
+
+.anchor {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.anchor a:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 150% thick grey;
+  border-radius: 15px;
+  color: rgba(226, 205, 14, 0.938);
+  background-color: white;
+  padding: 15% 15%;
+}
+
+.a1, .a2 {
+  margin-left: 15%;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: red;
+}
+
+.a3, .a4 {
+  margin-left: 15%;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: red;
+}
+/*# sourceMappingURL=Royalenfield.css.map */

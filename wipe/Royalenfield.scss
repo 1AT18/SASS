@@ -1,0 +1,66 @@
+@import './resets';
+@import './variables';
+
+@mixin mobile{
+    @media (max-width:$mobile) {
+        @content
+    }
+}
+@mixin flexCenter{
+    margin-left: $left-gap;
+   font-style: $style;
+   font-family: $family;
+   color: red;
+}
+body{
+    background-image:$naturepic;
+    background-repeat: no-repeat;
+    background-size:cover;    
+}
+.nav{
+    border-radius: 1% rgb(233, 227, 227) ;
+    background-image: linear-gradient(rgb(128, 128, 128),rgb(187, 176, 176));
+    margin-top: $top-gap;
+    display: flex;
+    justify-items: $alignitems;
+    @include mobile{
+        flex-direction: column;
+    }
+
+   #{&}_logo{
+       display: flex;
+       justify-content: left;
+       height: $logo-height;
+       width: $logo-width; 
+    }
+}
+.anchor{
+    text-decoration: $text-decor;
+    margin-top: 1%;
+    display: flex;
+    align-items: $alignitems;
+    justify-content: space-evenly ;
+
+   a:hover{
+        display: flex;
+        justify-content: $alignitems;
+        justify-content: space-between; 
+        border: 150% thick grey;
+        border-radius: $border-gap;
+        color: $hover-effect-color;
+        background-color: $hover-background-color;
+        padding: $line-padding;
+}
+}
+.a1 {
+  @include flexCenter;
+}
+.a2{
+    @extend .a1
+}
+.a3{
+    @include flexCenter;
+}
+.a4{
+    @extend .a3
+}
